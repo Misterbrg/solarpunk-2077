@@ -2670,7 +2670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f014bc305e03a24fb31a0bb75fa3c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DronePlanter
-  seedPrefab: {fileID: 7233257814212868684, guid: 4d94ab6e654221b408c73b6a50bd1747, type: 3}
+  seedPrefab: {fileID: 5498339146262478191, guid: 4d94ab6e654221b408c73b6a50bd1747, type: 3}
   plantAction: {fileID: -1000652089647049532, guid: 1f1d686ea6ea05341b0da9304f788197, type: 3}
   plantsContainer: {fileID: 368475675}
   groundHeight: 0
