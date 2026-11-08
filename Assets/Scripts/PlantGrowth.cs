@@ -9,6 +9,9 @@ public class PlantGrowth : MonoBehaviour
     [SerializeField] private float ripeDuration = 10f;
     [SerializeField] private float overripeDuration = 5f;
 
+    [Header("Arrosage")]
+    [SerializeField] private float wateredDuration = 0.2f;
+
     [Header("Visuels de chaque étape")]
     [SerializeField] private GameObject seedVisual;
     [SerializeField] private GameObject ripeVisual;
@@ -17,13 +20,13 @@ public class PlantGrowth : MonoBehaviour
     private PlantState currentState;
     private float stateTimer;
     private float growthSpeedMultiplier = 1f;
+    private float wateredTimeLeft;
 
     // Lecture seule depuis l'extérieur : le futur script de récolte pourra tester CurrentState == Ripe.
     public PlantState CurrentState => currentState;
 
     void Start()
     {
-        // Vérifie chaque visuel séparément pour que le message dise précisément ce qui manque.
         if (seedVisual == null)
         {
             Debug.LogError("PlantGrowth : le visuel Seed n'est pas assigné dans l'Inspector.", this);
@@ -50,7 +53,17 @@ public class PlantGrowth : MonoBehaviour
 
     void Update()
     {
-        // Le multiplicateur permettra d'accélérer la pousse (arrosage) sans toucher aux durées.
+        // Quand le délai expire (le drone n'arrose plus), retour à la vitesse normale.
+        if (wateredTimeLeft > 0f)
+        {
+            wateredTimeLeft -= Time.deltaTime;
+
+            if (wateredTimeLeft <= 0f)
+            {
+                growthSpeedMultiplier = 1f;
+            }
+        }
+
         stateTimer += Time.deltaTime * growthSpeedMultiplier;
 
         switch (currentState)
@@ -69,6 +82,13 @@ public class PlantGrowth : MonoBehaviour
         }
     }
 
+    // Appelée par le drone à chaque image d'arrosage : accélère la pousse et relance le délai.
+    public void Water(float bonus)
+    {
+        growthSpeedMultiplier = bonus;
+        wateredTimeLeft = wateredDuration;
+    }
+
     private void SetState(PlantState newState)
     {
         currentState = newState;
@@ -76,7 +96,6 @@ public class PlantGrowth : MonoBehaviour
         // Remise à zéro obligatoire : sinon la plante enchaînerait toutes les étapes en une seule image.
         stateTimer = 0f;
 
-        // Un seul visuel actif à la fois : celui qui correspond à l'état courant.
         seedVisual.SetActive(newState == PlantState.Seed);
         ripeVisual.SetActive(newState == PlantState.Ripe);
         overripeVisual.SetActive(newState == PlantState.Overripe);
