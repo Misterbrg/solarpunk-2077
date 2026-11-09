@@ -232,6 +232,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1700594028}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &107529588 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7753763813196576777, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
+  m_PrefabInstance: {fileID: 6121036745741684118}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &368475674
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,7 +608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1197867173858620705, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 40
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1197867173858620705, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -637,6 +642,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1374935021468006368, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374935021468006368, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374935021468006368, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
+      propertyPath: m_Size.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984329803574768266, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3540443854771279305, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3540443854771279305, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3540443854771279305, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1800
+      objectReference: {fileID: 0}
     - target: {fileID: 5527854572067334963, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
       propertyPath: plantsContainer
       value: 
@@ -648,8 +681,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7499507555945194697, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6567552541530038468}
   m_SourcePrefab: {fileID: 100100000, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
+--- !u!1 &6567552541530038463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7499507555945194697, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
+  m_PrefabInstance: {fileID: 6121036745741684118}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6567552541530038468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6567552541530038463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103b3f2b755479a4296051c40a45b5fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DroneWatering
+  waterAction: {fileID: -2482291260593435342, guid: 1f1d686ea6ea05341b0da9304f788197, type: 3}
+  waterJet: {fileID: 107529588}
+  wateringRadius: 2
+  growthBonus: 2
+  groundHeight: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
