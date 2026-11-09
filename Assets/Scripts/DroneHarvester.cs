@@ -40,14 +40,12 @@ public class DroneHarvester : MonoBehaviour
         if (harvestAction.action.WasPressedThisFrame())
         {
             TryHarvest();
-            Debug.Log("F détecté");
         }
       
     }
 
     private void TryHarvest()
     {
-        Debug.Log("Plantes sous le drone : " + plantsBelow.Count);
         // Une plante détruite (pourrie) ne déclenche jamais OnTriggerExit : on purge les références mortes.
         // Unity surcharge == : une plante détruite est égale à null.
         plantsBelow.RemoveAll(plant => plant == null);
@@ -72,7 +70,6 @@ public class DroneHarvester : MonoBehaviour
 
         // Le sol et les autres objets n'ont pas de PlantGrowth : on les ignore.
         if (plant == null) return;
-        Debug.Log("Plante entrée");
         // Contains : une plante à plusieurs colliders ne doit pas être ajoutée en double.
         if (!plantsBelow.Contains(plant))
         {
