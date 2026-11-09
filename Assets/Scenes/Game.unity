@@ -685,6 +685,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7499507555945194697, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6567552541530038468}
+    - targetCorrespondingSourceObject: {fileID: 7499507555945194697, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6567552541530038474}
   m_SourcePrefab: {fileID: 100100000, guid: 2d81c0425d157804782cd4c1985a6ce3, type: 3}
 --- !u!1 &6567552541530038463 stripped
 GameObject:
@@ -708,6 +711,19 @@ MonoBehaviour:
   wateringRadius: 2
   growthBonus: 2
   groundHeight: 0
+--- !u!114 &6567552541530038474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6567552541530038463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0329fd6c52e07a54da2369e09d391088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DroneHarvester
+  harvestAction: {fileID: -8642054217386789556, guid: 1f1d686ea6ea05341b0da9304f788197, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@ public class PlantGrowth : MonoBehaviour
     private float growthSpeedMultiplier = 1f;
     private float wateredTimeLeft;
 
-    // Lecture seule depuis l'extérieur : le futur script de récolte pourra tester CurrentState == Ripe.
+    // Lecture seule depuis l'extérieur : utilisé par DroneHarvester
     public PlantState CurrentState => currentState;
 
     void Start()
@@ -87,6 +87,12 @@ public class PlantGrowth : MonoBehaviour
     {
         growthSpeedMultiplier = bonus;
         wateredTimeLeft = wateredDuration;
+    }
+
+    // Appelée par le drone quand le joueur récolte la plante.
+    public void Harvest()
+    {
+        Destroy(gameObject);
     }
 
     private void SetState(PlantState newState)
