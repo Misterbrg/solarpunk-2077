@@ -6,6 +6,9 @@ public class DroneHarvester : MonoBehaviour
 {
     [Header("Références")]
     [SerializeField] private InputActionReference harvestAction;
+    [SerializeField] private ScoreManager scoreManager;
+    [SerializeField] private int pointsPerHarvest = 10;
+           
 
     // Plantes dont le trigger chevauche actuellement le drone.
     private readonly List<PlantGrowth> plantsBelow = new List<PlantGrowth>();
@@ -21,6 +24,13 @@ public class DroneHarvester : MonoBehaviour
 
         // Sans Enable(), l'action ne détecte aucun appui.
         harvestAction.action.Enable();
+
+        if (scoreManager == null)
+        {
+            Debug.LogError("DroneHarvester : le ScoreManager n'est pas assigné dans l'Inspector.", this);
+            enabled = false;
+            return;
+        }
     }
 
     void OnDisable()
@@ -55,7 +65,8 @@ public class DroneHarvester : MonoBehaviour
             if (plant.CurrentState != PlantGrowth.PlantState.Ripe) continue;
 
             plant.Harvest();
-            plantsBelow.Remove(plant);
+        scoreManager.AddScore(pointsPerHarvest);
+        plantsBelow.Remove(plant);
 
             // On sort du foreach juste après Remove : modifier la liste puis continuer à la parcourir provoquerait une erreur.
             // Et une seule plante récoltée par appui.
