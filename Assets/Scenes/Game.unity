@@ -665,12 +665,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128933965}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 178.28732, y: 0, z: 1089.7123}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 152.99567, y: -13.50496, z: 1248.3123}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 749231675}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &128933967
 MonoBehaviour:
@@ -1100,7 +1100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3fe5b0e667b644e4c9b1f65692b2795d, type: 3}
       propertyPath: m_Name
-      value: Crate1 (1)
+      value: casse_en_bois_2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1229,12 +1229,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332470419}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -233.85, y: 20.07, z: 104.47}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -389.00446, y: 16.45566, z: 451.15863}
   m_LocalScale: {x: 10, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1889406941}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &345956492
 GameObject:
@@ -1431,7 +1431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7a92c5bbb63f0c3499058cfac86b0ec3, type: 3}
       propertyPath: m_Name
-      value: Crate2 (3)
+      value: casse_en_bois_8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1468,44 +1468,13 @@ Transform:
   m_GameObject: {fileID: 366727792}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.61448, y: -0.00733, z: -74.7963}
+  m_LocalPosition: {x: -45.42939, y: -0.000020000152, z: -106.80887}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2122179971}
   - {fileID: 1181456737}
-  m_Father: {fileID: 1700594028}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &368475674
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 368475675}
-  m_Layer: 0
-  m_Name: Plants
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &368475675
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 368475674}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1981068722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &383252064
 GameObject:
@@ -1534,11 +1503,11 @@ Transform:
   m_GameObject: {fileID: 383252064}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 152.77011, y: 0, z: 1554.0737}
+  m_LocalPosition: {x: 127.47846, y: -13.50496, z: 1712.6737}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 749231675}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &383252066
 MonoBehaviour:
@@ -2323,7 +2292,7 @@ Transform:
   m_GameObject: {fileID: 566021490}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.04014, y: -0.00734, z: -81.54327}
+  m_LocalPosition: {x: -35.85505, y: -0.000030000228, z: -113.55583}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2335,7 +2304,7 @@ Transform:
   - {fileID: 1223622721}
   - {fileID: 1389700068}
   - {fileID: 356688026}
-  m_Father: {fileID: 1700594028}
+  m_Father: {fileID: 1981068722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &572655003
 PrefabInstance:
@@ -2473,7 +2442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3fe5b0e667b644e4c9b1f65692b2795d, type: 3}
       propertyPath: m_Name
-      value: Crate1 (2)
+      value: casse_en_bois_3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2762,12 +2731,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593261149}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.01191, y: -0.00732, z: -34.61347}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.279741, y: -13.51228, z: 123.98654}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 749231675}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &604988024
 GameObject:
@@ -2780,7 +2749,7 @@ GameObject:
   - component: {fileID: 604988025}
   - component: {fileID: 604988026}
   m_Layer: 3
-  m_Name: Box (3)
+  m_Name: Box_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3073,6 +3042,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 730c411b54e50404d8491a63edca523b, type: 3}
   m_PrefabInstance: {fileID: 1701469339}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &749231674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 749231675}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &749231675
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749231674}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 25.29165, y: 13.50496, z: -158.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 128933966}
+  - {fileID: 593261152}
+  - {fileID: 1123353753}
+  - {fileID: 383252065}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &752578941
 GameObject:
   m_ObjectHideFlags: 0
@@ -3091,7 +3095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &752578942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3749,7 +3753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3fe5b0e667b644e4c9b1f65692b2795d, type: 3}
       propertyPath: m_Name
-      value: Crate1
+      value: casse_en_bois_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3777,7 +3781,7 @@ GameObject:
   - component: {fileID: 929068665}
   - component: {fileID: 929068664}
   m_Layer: 0
-  m_Name: Arbre (2)
+  m_Name: Arbre_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3814,12 +3818,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929068663}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -167.76, y: 20.21, z: -53.95}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -322.91443, y: 16.59566, z: 292.73862}
   m_LocalScale: {x: 10, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1889406941}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &989614518 stripped
 Transform:
@@ -3911,7 +3915,7 @@ GameObject:
   - component: {fileID: 1065481195}
   - component: {fileID: 1065481196}
   m_Layer: 3
-  m_Name: Box (2)
+  m_Name: Box_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4197,12 +4201,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123353751}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.01192, y: -0.00732, z: -34.61351}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.279732, y: -13.51228, z: 123.986496}
   m_LocalScale: {x: 153.03658, y: 153.03658, z: 153.03658}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 749231675}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1130816812
 PrefabInstance:
@@ -4388,7 +4392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7d85598ba12f0c944bf634db1b1843bf, type: 3}
       propertyPath: m_Name
-      value: Barrel1 (1)
+      value: Barrel_2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4462,7 +4466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7a92c5bbb63f0c3499058cfac86b0ec3, type: 3}
       propertyPath: m_Name
-      value: Crate2 (1)
+      value: casse_en_bois_6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5452,7 +5456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7a92c5bbb63f0c3499058cfac86b0ec3, type: 3}
       propertyPath: m_Name
-      value: Crate2 (2)
+      value: casse_en_bois_7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5928,7 +5932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3fe5b0e667b644e4c9b1f65692b2795d, type: 3}
       propertyPath: m_Name
-      value: Crate1 (3)
+      value: casse_en_bois_4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6002,7 +6006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7a92c5bbb63f0c3499058cfac86b0ec3, type: 3}
       propertyPath: m_Name
-      value: Crate2
+      value: casse_en_bois_5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6025,7 +6029,7 @@ GameObject:
   - component: {fileID: 1566248370}
   - component: {fileID: 1566248369}
   m_Layer: 0
-  m_Name: Arbre (1)
+  m_Name: Arbre_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6062,12 +6066,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566248368}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -161.9, y: 19.8, z: 3.18}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -317.05444, y: 16.18566, z: 349.86862}
   m_LocalScale: {x: 10, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1889406941}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1588996822
 GameObject:
@@ -6320,8 +6324,7 @@ Transform:
   - {fileID: 63692063}
   - {fileID: 1854847735}
   - {fileID: 1889406941}
-  - {fileID: 566021491}
-  - {fileID: 366727793}
+  - {fileID: 1981068722}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1701469339
@@ -7226,6 +7229,11 @@ Transform:
   - {fileID: 1946353209}
   - {fileID: 1065481195}
   - {fileID: 604988025}
+  - {fileID: 332470421}
+  - {fileID: 1566248370}
+  - {fileID: 929068665}
+  - {fileID: 2003709023}
+  - {fileID: 2090224212}
   m_Father: {fileID: 1700594028}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1904491414
@@ -7436,7 +7444,7 @@ GameObject:
   - component: {fileID: 1946353209}
   - component: {fileID: 1946353210}
   m_Layer: 3
-  m_Name: Box (1)
+  m_Name: Box_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7686,6 +7694,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979683485}
   m_CullTransparentMesh: 1
+--- !u!1 &1981068721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1981068722}
+  m_Layer: 0
+  m_Name: "D\xE9cors"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1981068722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981068721}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.81491, y: -0.00731, z: 32.01257}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 366727793}
+  - {fileID: 566021491}
+  m_Father: {fileID: 1700594028}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1992460997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7771,7 +7812,7 @@ GameObject:
   - component: {fileID: 2003709023}
   - component: {fileID: 2003709022}
   m_Layer: 0
-  m_Name: Arbre (3)
+  m_Name: Arbre3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7808,12 +7849,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003709021}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 78.84, y: 20.61, z: -28.71}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -76.31444, y: 16.99566, z: 317.97864}
   m_LocalScale: {x: 10, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1889406941}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2006684129
 PrefabInstance:
@@ -8377,7 +8418,7 @@ GameObject:
   - component: {fileID: 2090224212}
   - component: {fileID: 2090224211}
   m_Layer: 0
-  m_Name: Arbre (4)
+  m_Name: Arbre_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8414,12 +8455,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090224210}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 103.69, y: 21.04, z: -216.94}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -51.46443, y: 17.425661, z: 129.74863}
   m_LocalScale: {x: 10, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1889406941}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2109853267
 PrefabInstance:
@@ -8552,7 +8593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7d85598ba12f0c944bf634db1b1843bf, type: 3}
       propertyPath: m_Name
-      value: Barrel1
+      value: Barrel_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8710,7 +8751,7 @@ PrefabInstance:
     - target: {fileID: 5527854572067334963, guid: e66e6cb0b121bb54d8b872da0ce4434e, type: 3}
       propertyPath: plantsContainer
       value: 
-      objectReference: {fileID: 368475675}
+      objectReference: {fileID: 0}
     - target: {fileID: 7499507555945194697, guid: e66e6cb0b121bb54d8b872da0ce4434e, type: 3}
       propertyPath: m_Name
       value: Drone
@@ -8736,15 +8777,6 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1700594028}
   - {fileID: 6121036745741684118}
-  - {fileID: 368475675}
   - {fileID: 752578945}
   - {fileID: 529732034}
-  - {fileID: 383252065}
-  - {fileID: 332470421}
-  - {fileID: 1566248370}
-  - {fileID: 929068665}
-  - {fileID: 2003709023}
-  - {fileID: 2090224212}
-  - {fileID: 1123353753}
-  - {fileID: 593261152}
-  - {fileID: 128933966}
+  - {fileID: 749231675}
