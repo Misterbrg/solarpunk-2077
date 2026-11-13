@@ -7,6 +7,8 @@ public class DronePlanter : MonoBehaviour
     [SerializeField] private GameObject seedPrefab;
     [SerializeField] private InputActionReference plantAction;
     [SerializeField] private Transform plantsContainer;
+    [SerializeField] private AudioManager audioManager;
+
 
     [Header("Réglages")]
     [SerializeField] private float groundHeight = 0f;
@@ -63,5 +65,7 @@ public class DronePlanter : MonoBehaviour
 
         // Quaternion.identity : aucune rotation. Le conteneur comme parent garde la hiérarchie propre.
         Instantiate(seedPrefab, position, Quaternion.identity, plantsContainer);
+
+        if (audioManager != null) audioManager.PlayPlant();
     }
 }

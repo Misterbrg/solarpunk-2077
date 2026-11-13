@@ -55,6 +55,7 @@ MonoBehaviour:
   seedVisual: {fileID: 5691565076171002189}
   ripeVisual: {fileID: 8828786631589287359}
   overripeVisual: {fileID: 6379576151639588972}
+  burstClip: {fileID: 8300000, guid: a01eaf160675fde4ebe47df68da646ee, type: 3}
 --- !u!136 &6483852621539608066
 CapsuleCollider:
   m_ObjectHideFlags: 0

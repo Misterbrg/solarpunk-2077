@@ -7,6 +7,7 @@ public class DroneHarvester : MonoBehaviour
     [Header("Références")]
     [SerializeField] private InputActionReference harvestAction;
     [SerializeField] private ScoreManager scoreManager;
+    [SerializeField] private AudioManager audioManager;
     [SerializeField] private int pointsPerHarvest = 10;
            
 
@@ -68,6 +69,7 @@ public class DroneHarvester : MonoBehaviour
         scoreManager.AddScore(pointsPerHarvest);
         plantsBelow.Remove(plant);
 
+            if (audioManager != null) audioManager.PlayHarvest();
             // On sort du foreach juste après Remove : modifier la liste puis continuer à la parcourir provoquerait une erreur.
             // Et une seule plante récoltée par appui.
             break;

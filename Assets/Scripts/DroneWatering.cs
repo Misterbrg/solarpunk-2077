@@ -11,6 +11,7 @@ public class DroneWatering : MonoBehaviour
     [SerializeField] private float wateringRadius = 5f;
     [SerializeField] private float growthBonus = 2f;
     [SerializeField] private float groundHeight = 0f;
+    [SerializeField] private AudioManager audioManager;
 
     void OnEnable()
     {
@@ -55,6 +56,7 @@ public class DroneWatering : MonoBehaviour
             if (!waterJet.isPlaying)
             {
                 waterJet.Play();
+                if (audioManager != null) audioManager.PlayWater();
             }
 
             WaterPlantsBelow();

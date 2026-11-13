@@ -16,6 +16,7 @@ public class PlantGrowth : MonoBehaviour
     [SerializeField] private GameObject seedVisual;
     [SerializeField] private GameObject ripeVisual;
     [SerializeField] private GameObject overripeVisual;
+    [SerializeField] private AudioClip burstClip;
 
     private PlantState currentState;
     private float stateTimer;
@@ -109,6 +110,8 @@ public class PlantGrowth : MonoBehaviour
 
     private void Burst()
     {
+        if (burstClip != null) AudioSource.PlayClipAtPoint(burstClip, transform.position);
         Destroy(gameObject);
+
     }
 }
