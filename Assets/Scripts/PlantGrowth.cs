@@ -16,14 +16,18 @@ public class PlantGrowth : MonoBehaviour
     [SerializeField] private GameObject seedVisual;
     [SerializeField] private GameObject ripeVisual;
     [SerializeField] private GameObject overripeVisual;
+
+    [Header("Effets")]
+    [SerializeField] private GameObject burstEffectPrefab;
     [SerializeField] private AudioClip burstClip;
+
 
     private PlantState currentState;
     private float stateTimer;
     private float growthSpeedMultiplier = 1f;
     private float wateredTimeLeft;
 
-    // Lecture seule depuis l'extérieur : utilisé par DroneHarvester
+    // Lecture seule depuis l'extérieur : le script de récolte teste CurrentState == Ripe.
     public PlantState CurrentState => currentState;
 
     void Start()
@@ -110,8 +114,16 @@ public class PlantGrowth : MonoBehaviour
 
     private void Burst()
     {
-        if (burstClip != null) AudioSource.PlayClipAtPoint(burstClip, transform.position);
+        // Effet optionnel : une plante sans effet assigné éclate quand même, sans erreur.
+        // L'effet est créé AVANT le Destroy, tant que la position de la plante est encore valide.
+        if (burstEffectPrefab != null)
+        {
+            Instantiate(burstEffectPrefab, transform.position, Quaternion.identity);
+        }
+        if (burstClip != null && Camera.main != null)
+        {
+            AudioSource.PlayClipAtPoint(burstClip, Camera.main.transform.position);
+        }
         Destroy(gameObject);
-
     }
 }
