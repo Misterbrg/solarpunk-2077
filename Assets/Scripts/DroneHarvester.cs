@@ -40,9 +40,6 @@ public class DroneHarvester : MonoBehaviour
         {
             harvestAction.action.Disable();
         }
-
-        // Le script coupé ne reçoit plus les Exit : on repart d'une liste vide à la réactivation.
-        plantsBelow.Clear();
     }
 
     void Update()
